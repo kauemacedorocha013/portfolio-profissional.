@@ -1,0 +1,36 @@
+.l-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid var(--border-main);
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.l-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-footer {
+    background-color: var(--bg-main);;
+    padding: 30px 0;
+    border-top: 1px solid var(--border-main);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.l-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

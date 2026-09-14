@@ -1,0 +1,8 @@
+@media (max-width: 1200px) {
+    .layout-kpi-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .layout-widgets-grid {
+        grid-template-columns: 1fr;
+    }
+}

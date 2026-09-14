@@ -1,0 +1,9 @@
+.m-navbar a {
+    margin-left: 30px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+.m-navbar a:hover {
+    color: var(--clr-primary);
+}
+

@@ -1,0 +1,22 @@
+:root {
+    --bg-dark: #0a0a0b;
+    --bg-sidebar: #0f0f12;
+    --bg-card: #141418;
+    --bg-card-hover: #1b1b22;
+    --border-color: #23232c;
+    
+    --primary-red: #c01818;
+    --primary-red-hover: #9e1212;
+    --badge-red: #d32f2f;
+    
+    --text-primary: #f1f1f3;
+    --text-secondary: #8e8e9e;
+    --text-muted: #575767;
+
+    --status-novo-bg: rgba(220, 38, 38, 0.15);
+    --status-novo-text: #ef4444;
+    --status-andamento-bg: rgba(217, 119, 6, 0.15);
+    --status-andamento-text: #f59e0b;
+    --status-respondido-bg: rgba(16, 185, 129, 0.15);
+    --status-respondido-text: #10b981;
+}

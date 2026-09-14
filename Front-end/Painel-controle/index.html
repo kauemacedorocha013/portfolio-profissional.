@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMR Technology - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Layout: Sidebar -->
+    <aside class="layout-sidebar">
+        <div class="brand">
+            <span class="brand-logo">&lt;KMR/&gt;</span>
+            <span class="brand-name">TECHNOLOGY</span>
+        </div>
+
+        <div class="user-profile">
+            <div class="avatar">
+                <img src="https://ui-avatars.com/api/?name=Kaue+Macedo&background=b91c1c&color=fff" alt="Kaüe Macedo">
+            </div>
+            <div class="user-info">
+                <h4>Kaue Macedo</h4>
+                <p>Administrador</p>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow-icon"></i>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#" class="nav-item is-active">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-bell"></i>
+                <span>Novos</span>
+                <span class="badge">3</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Respondidos</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-box-archive"></i>
+                <span>Arquivados</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>Estatísticas</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+            </a>
+            <a href="#" class="nav-item nav-item-logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Sair</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>© 2026 KMR Technology</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+    </aside>
+
+    <!-- Layout: Main Content -->
+    <main class="layout-main">
+        <header class="layout-header">
+            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <div class="header-right">
+                <div class="notification-bell">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="header-user">
+                    <span>Kaüe Macedo</span>
+                    <img src="https://ui-avatars.com/api/?name=Kaue+Macedo&background=b91c1c&color=fff" alt="Kaüe Macedo">
+                </div>
+            </div>
+        </header>
+
+        <section class="page-title">
+            <h1>Dashboard</h1>
+            <p>Visão geral dos seus contatos</p>
+        </section>
+
+        <section class="layout-kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-content">
+                    <span class="kpi-title">TOTAL DE CONTATOS</span>
+                    <h2 class="kpi-value">24</h2>
+                    <span class="kpi-sub">Todos os registros</span>
+                </div>
+                <div class="kpi-icon"><i class="fa-solid fa-users"></i></div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-content">
+                    <span class="kpi-title">NOVOS</span>
+                    <h2 class="kpi-value">3</h2>
+                    <span class="kpi-sub">Aguardando resposta</span>
+                </div>
+                <div class="kpi-icon"><i class="fa-solid fa-envelope"></i></div>
+            </div> 
+
+            <div class="kpi-card">
+                <div class="kpi-content">
+                    <span class="kpi-title">EM ANDAMENTO</span>
+                    <h2 class="kpi-value">4</h2>
+                    <span class="kpi-sub">Em contato</span>
+                </div>
+                <div class="kpi-icon"><i class="fa-regular fa-clock"></i></div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-content">
+                    <span class="kpi-title">RESPONDIDOS</span>
+                    <h2 class="kpi-value">17</h2>
+                    <span class="kpi-sub">Concluídos</span>
+                </div>
+                <div class="kpi-icon"><i class="fa-solid fa-check"></i></div>
+            </div>
+
+            <div class="kpi-card">
+                <div class="kpi-content">
+                    <span class="kpi-title">ARQUIVADOS</span>
+                    <h2 class="kpi-value">0</h2>
+                    <span class="kpi-sub">Arquivados</span>
+                </div>
+                <div class="kpi-icon"><i class="fa-solid fa-box-archive"></i></div>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <div class="table-header">
+                <h3>Contatos recentes</h3>
+                <div class="table-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar contato...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Novo Contato</button>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOME</th>
+                            <th>ASSUNTO</th>
+                            <th>E-MAIL</th>
+                            <th>STATUS</th>
+                            <th>DATA</th>
+                            <th>AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>24</td>
+                            <td>João Silva</td>
+                            <td>Orçamento de projeto</td>
+                            <td>joao.silva@email.com</td>
+                            <td><span class="status-tag status-tag-novo">Novo</span></td>
+                            <td>06/08/2026 14:32</td>
+                            <td class="action-buttons">
+                                <button title="Ver"><i class="fa-regular fa-eye"></i></button>
+                                <button title="Responder"><i class="fa-solid fa-reply"></i></button>
+                                <button title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Maria Souza</td>
+                            <td>Trabalhos freelancer</td>
+                            <td>maria.souza@email.com</td>
+                            <td><span class="status-tag status-tag-andamento">Em andamento</span></td>
+                            <td>06/08/2026 11:15</td>
+                            <td class="action-buttons">
+                                <button title="Ver"><i class="fa-regular fa-eye"></i></button>
+                                <button title="Responder"><i class="fa-solid fa-reply"></i></button>
+                                <button title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Carlos Lima</td>
+                            <td>Dúvida sobre portfólio</td>
+                            <td>carlos.lima@email.com</td>
+                            <td><span class="status-tag status-tag-respondido">Respondido</span></td>
+                            <td>05/08/2026 16:45</td>
+                            <td class="action-buttons">
+                                <button title="Ver"><i class="fa-regular fa-eye"></i></button>
+                                <button title="Responder"><i class="fa-solid fa-reply"></i></button>
+                                <button title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Ana Beatriz</td>
+                            <td>Proposta de parceria</td>
+                            <td>ana.beatriz@email.com</td>
+                            <td><span class="status-tag status-tag-novo">Novo</span></td>
+                            <td>05/08/2026 10:20</td>
+                            <td class="action-buttons">
+                                <button title="Ver"><i class="fa-regular fa-eye"></i></button>
+                                <button title="Responder"><i class="fa-solid fa-reply"></i></button>
+                                <button title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Pedro Lucas</td>
+                            <td>Solicitação de serviço</td>
+                            <td>pedro.lucas@email.com</td>
+                            <td><span class="status-tag status-tag-respondido">Respondido</span></td>
+                            <td>04/08/2026 09:10</td>
+                            <td class="action-buttons">
+                                <button title="Ver"><i class="fa-regular fa-eye"></i></button>
+                                <button title="Responder"><i class="fa-solid fa-reply"></i></button>
+                                <button title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <button class="btn btn-secondary">Ver todos os contatos</button>
+            </div>
+        </section>
+
+        <section class="layout-widgets-grid">
+            <div class="widget-card">
+                <h3>Contatos por status</h3>
+                <div class="chart-container">
+                    <div class="donut-chart"></div>
+                    <ul class="chart-legend">
+                        <li><span class="dot red"></span> Novos <span class="val">3 (12.5%)</span></li>
+                        <li><span class="dot yellow"></span> Em andamento <span class="val">4 (16.7%)</span></li>
+                        <li><span class="dot green"></span> Respondidos <span class="val">17 (70.8%)</span></li>
+                        <li><span class="dot grey"></span> Arquivados <span class="val">0 (0%)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="widget-card">
+                <h3>Últimos contatos</h3>
+                <ul class="timeline-list">
+                    <li>
+                        <span class="timeline-dot red"></span>
+                        <div class="timeline-info">
+                            <strong>João Silva</strong>
+                            <p>Orçamento de projeto</p>
+                        </div>
+                        <span class="time">14:32</span>
+                    </li>
+                    <li>
+                        <span class="timeline-dot red"></span>
+                        <div class="timeline-info">
+                            <strong>Maria Souza</strong>
+                            <p>Trabalhos freelancer</p>
+                        </div>
+                        <span class="time">11:15</span>
+                    </li>
+                    <li>
+                        <span class="timeline-dot red"></span>
+                        <div class="timeline-info">
+                            <strong>Carlos Lima</strong>
+                            <p>Dúvida sobre portfólio</p>
+                        </div>
+                        <span class="time">Ontem</span>
+                    </li>
+                    <li>
+                        <span class="timeline-dot red"></span>
+                        <div class="timeline-info">
+                            <strong>Ana Beatriz</strong>
+                            <p>Proposta de parceria</p>
+                        </div>
+                        <span class="time">Ontem</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="widget-card cta-card">
+                <div class="cta-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <h3>Responda mais rápido</h3>
+                <p>Você tem 3 contatos novos aguardando sua resposta.</p>
+                <button class="btn btn-primary">Ver novos contatos</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>

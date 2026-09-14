@@ -1,0 +1,7 @@
+.m-footer-socials a {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+.m-footer-socials a:hover {
+    color: var(--clr-primary);
+}

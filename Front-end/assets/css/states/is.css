@@ -1,0 +1,30 @@
+.m-btn.is-primary {
+    background-color: var(--clr-primary);
+    color: var(--text-main);
+    border: 2px solid var(--clr-primary);
+}
+.m-btn.is-primary:hover {
+    background-color: var(--clr-primary-hover);
+    border-color: var(--clr-primary-hover);
+}
+
+.m-btn.is-secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--text-main);
+}
+.m-btn.is-secondary:hover {
+    background-color: var(--text-main);
+    color: var(--bg-main);
+}
+
+.m-navbar .is-active-btn {
+    color: var(--text-main);
+    border: 1px solid var(--clr-primary);
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+.m-navbar .is-active-btn:hover {
+    background-color: var(--clr-primary);
+    color: var(--text-main);  
+}

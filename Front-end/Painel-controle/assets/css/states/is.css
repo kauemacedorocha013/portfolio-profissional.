@@ -1,0 +1,15 @@
+.is-active {
+    background-color: #611212 !important;
+    color: #ffffff !important;
+}
+
+/* Desabilitado */
+.is-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Oculto */
+.is-hidden {
+    display: none !important;
+}

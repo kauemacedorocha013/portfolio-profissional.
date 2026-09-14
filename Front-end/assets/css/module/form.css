@@ -1,0 +1,25 @@
+.m-contact-form .form-group {
+    margin-bottom: 20px;
+}
+.m-contact-form input,
+.m-contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-main);
+    color: var(--text-main);
+    border-radius: 4px;
+}
+.m-contact-form input:focus,
+.m-contact-form textarea:focus {
+    outline: none;
+    border-color: var(--clr-primary);
+}
+
+.m-error-message{
+    display:none;
+    opacity: 0;
+    color: var(--clr-primary);
+    font-size: 0.875rem;
+    margin-top: 5px;
+}

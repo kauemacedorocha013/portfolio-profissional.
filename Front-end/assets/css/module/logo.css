@@ -1,0 +1,53 @@
+#logo {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Configuração do Logo e ativação da animação */
+.logo-glitch {
+  /* Chama a animação 'introGlitch' */
+  /* Dura 1.5 segundos, roda uma vez só (infinite não, queremos que pare!) */
+  animation: introGlitch 1.5s ease-in-out forwards;
+}
+
+/* O "Roteiro" da Animação (Keyframes) */
+@keyframes introGlitch {
+  0% {
+    transform: scale(0.9) skewX(0deg);
+    filter: saturate(1) hue-rotate(0deg);
+    opacity: 0;
+  }
+  /* 10% de carregamento: O logo surge piscando e distorcido */
+  10% {
+    transform: scale(1) skewX(-15deg);
+    filter: saturate(3) hue-rotate(90deg);
+    opacity: 0.8;
+  }
+  /* 15% de carregamento: Uma quebra rápida para o outro lado */
+  15% {
+    transform: skewX(15deg);
+    filter: saturate(5) hue-rotate(180deg);
+    opacity: 1;
+  }
+  /* 20% de carregamento: Volta quase ao normal */
+  20% {
+    transform: skewX(0deg);
+    filter: saturate(1) hue-rotate(0deg);
+  }
+  /* 45% de carregamento: Mais uma piscada/interferência rápida de relance */
+  45% {
+    transform: skewX(-10deg);
+    filter: saturate(2) hue-rotate(45deg);
+  }
+  /* 50% de carregamento: Estabiliza de vez */
+  50% {
+    transform: skewX(0deg);
+    filter: saturate(1) hue-rotate(0deg);
+  }
+  /* De 50% até 100%: O logo permanece perfeito e intocado na tela */
+  100% {
+    transform: scale(1) skewX(0deg);
+    filter: none;
+    opacity: 1;
+  }
+}

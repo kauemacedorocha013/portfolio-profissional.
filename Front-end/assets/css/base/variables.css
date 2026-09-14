@@ -1,0 +1,22 @@
+:root {
+    /* Superfícies e Fundos (Pretos e Cinzas Escuros) */
+    --bg-main: #0a0a0a;           /* Preto profundo (Fundo principal / Rodapé) */
+    --bg-secondary: #121212;      /* Preto alternativo (Contraste de seções) */
+    --bg-card: #1a1a1a;           /* Cinza escuro (Cards de projetos/skills e inputs) */
+    --bg-overlay: #111111;   
+    --bg-pt-float: #000000;     /* Fundo neutro para imagens vazias ou placeholders */
+    
+    /* Identidade Visual (Vermelho) */
+    --clr-primary: #e50914;       /* Vermelho vibrante (Destaques, ícones e botões) */
+    --clr-primary-hover: #b80710; /* Vermelho escuro (Efeito de passar o mouse) */
+    --clr-primary-alpha: rgba(229, 9, 20, 0.2); /* Vermelho com transparência (Efeito no Avatar) */
+    --clr-gradient-start: #1a0203;/* Tom avermelhado escuro para o gradiente da seção Hero */
+
+    /* Elementos de Interface (Bordas e Textos) */
+    --border-main: #262626;       /* Cinza para linhas divisórias e bordas sutis */
+    --text-main: #ffffff;         /* Branco puro (Títulos e textos em destaque) */
+    --text-muted: #a3a3a3;        /* Cinza claro (Parágrafos e descrições secundárias) */
+
+    /* Transições Globais */
+    --transition-smooth: 0.3s ease;
+}
