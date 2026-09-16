@@ -48,9 +48,11 @@
 .m-avatar-frame {
     position: relative;
     border-radius: 12px;
+    padding: 15px;
     overflow: hidden;
     border: 2px solid var(--border-main);
 }
+
 .m-avatar-frame::before {
     content: '';
     position: absolute;
@@ -61,6 +63,11 @@
     background: linear-gradient(to bottom, transparent, var(--clr-primary-alpha));
     pointer-events: none;
 }
+
+#m-my-image{
+    border-radius: 12px;
+}
+
 
 /* Módulo: Bloco "Sobre" */
 .m-about-block {
