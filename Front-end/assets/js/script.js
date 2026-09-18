@@ -89,23 +89,80 @@ function validarMensagem() {
 }
 
 // Animação de cards skills
+// ========================================
+// ANIMAÇÃO DOS CARDS DE SKILLS
+// ========================================
 
-const cards = document.querySelectorAll('.m-skill-card');
+const cardsSkills = document.querySelectorAll('.m-skill-card');
 
 const observer = new IntersectionObserver((entries) => {
+
     entries.forEach((entry) => {
+
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
             observer.unobserve(entry.target);
         }
+
     });
+
 }, {
     threshold: 0.7
 });
 
-cards.forEach((card, index) => {
+cardsSkills.forEach((card, index) => {
+
     card.style.transitionDelay = `${index * 150}ms`;
+
     observer.observe(card);
+
 });
 
-// 
+
+// ========================================
+// CARROSSEL DE PROJETOS
+// ========================================
+
+const projetos = document.querySelector(".m-projects-grid");
+
+const botaoAnterior = document.querySelector(".m-carousel-btn-prev");
+const botaoProximo = document.querySelector(".m-carousel-btn-next");
+
+const cardsProjetos = document.querySelectorAll(".m-project-card");
+
+let cardAtual = 0;
+
+
+botaoProximo.addEventListener("click", function () {
+
+    if (cardAtual < cardsProjetos.length - 3) {
+        cardAtual++;
+    }
+
+    moverCarrossel();
+
+});
+
+
+botaoAnterior.addEventListener("click", function () {
+
+    if (cardAtual > 0) {
+        cardAtual--;
+    }
+
+    moverCarrossel();
+
+});
+
+
+function moverCarrossel() {
+
+    const larguraCard = cardsProjetos[0].offsetWidth;
+
+    const gap = 24;
+
+    const distancia = cardAtual * (larguraCard + gap);
+
+    projetos.style.transform = `translateX(-${distancia}px)`;
+
+}

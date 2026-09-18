@@ -244,6 +244,8 @@
     overflow: hidden;
     border: 1px solid var(--border-main);
     transition: var(--transition-smooth);
+
+    flex: 0 0 calc((100% - 48px) / 3);
 }
 .m-project-card:hover {
     transform: translateY(-5px);
@@ -293,6 +295,67 @@
     border-radius: 4px;
     font-weight: 600;
     border: 1px solid var(--border-main);
+}
+
+/* =========================
+   CARROSSEL DE PROJETOS
+========================= */
+
+.m-project-carousel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.m-project-carousel-window {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.m-projects-grid {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.4s ease;
+}
+
+.m-project-card {
+    flex: 0 0 calc((100% - 48px) / 3);
+}
+
+.m-carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    border: 1px solid var(--border-main);
+    border-radius: 50%;
+
+    background-color: var(--bg-card);
+    color: var(--clr-primary);
+
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    transition: var(--transition-smooth);
+}
+
+.m-carousel-btn:hover {
+    background-color: var(--clr-primary);
+    color: var(--bg-main);
+    border-color: var(--clr-primary);
+
+    transform: scale(1.08);
+}
+
+.m-carousel-btn:active {
+    transform: scale(0.95);
 }
 
 /* Módulo: Bloco de Contato */
